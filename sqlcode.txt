@@ -41,7 +41,7 @@ CREATE TABLE People (
    people_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    age INTEGER NOT NULL,
    sex VARCHAR(255) NOT NULL,
-   car_type VARCHAR(255) NOT NULL,
+   car_type VARCHAR(255),
    event_id INT NOT NULL,
    people_order VARCHAR(255) NOT NULL,
    FOREIGN KEY (event_id) REFERENCES Accident(event_id)
