@@ -1,5 +1,5 @@
 CREATE TABLE Date (
-   datetime VARCHAR(255) PRIMARY KEY,
+   datetime DATE PRIMARY KEY,
    year INTEGER,
    month INTEGER,
    day INTEGER
