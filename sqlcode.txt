@@ -27,8 +27,8 @@ CREATE TABLE Condi (
 CREATE TABLE Accident (
    event_id INTEGER PRIMARY KEY AUTO_INCREMENT,
    accident_type CHAR(255) NOT NULL,
-   date_id CHAR(255),
-   FOREIGN KEY (date_id) REFERENCES Date(datetime),
+   datetime DATE,
+   FOREIGN KEY (datetime) REFERENCES Date(datetime),
    handle_id INTEGER,
    FOREIGN KEY (handle_id) REFERENCES Handle(handle_id),
    cause_id INTEGER,
